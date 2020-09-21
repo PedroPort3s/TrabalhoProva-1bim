@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.ClienteController">
+   <children>
+      <AnchorPane layoutX="-194.0" layoutY="-59.0" prefHeight="562.0" prefWidth="727.0">
+         <children>
+            <Button fx:id="btnCadastrar" layoutX="396.0" layoutY="237.0" mnemonicParsing="false" onAction="#Cadastrar" prefHeight="26.0" prefWidth="136.0" text="Cadastrar" />
+            <Button fx:id="btnAlterar" layoutX="220.0" layoutY="295.0" mnemonicParsing="false" onAction="#Alterar" prefHeight="26.0" prefWidth="66.0" text="Alterar" />
+            <Button fx:id="btnExcluir" layoutX="302.0" layoutY="295.0" mnemonicParsing="false" onAction="#Excluir" prefHeight="26.0" prefWidth="66.0" text="Excluir" />
+            <TextField fx:id="txtPesquisa" layoutX="491.0" layoutY="296.0" promptText="Dados da pesquisa" />
+            <Button fx:id="btnPesquisar" layoutX="636.0" layoutY="296.0" mnemonicParsing="false" onAction="#Pesquisar" text="Pesquisar" />
+            <ListView fx:id="lvCliente" layoutX="220.0" layoutY="328.0" prefHeight="200.0" prefWidth="483.0" />
+            <TextField fx:id="txtNome" layoutX="222.0" layoutY="183.0" />
+            <Label layoutX="222.0" layoutY="159.0" text="Nome:" />
+            <Label layoutX="401.0" layoutY="158.0" text="Telefone" />
+            <TextField fx:id="txtTelefone" layoutX="396.0" layoutY="186.0" />
+            <TextField fx:id="txtEndereco" layoutX="220.0" layoutY="239.0" />
+            <Label layoutX="222.0" layoutY="222.0" text="Endereço" />
+            <Label fx:id="lbIdTexto" layoutX="226.0" layoutY="118.0" text="Id:" />
+            <Label fx:id="lbIdValor" layoutX="259.0" layoutY="118.0" text="..." />
+            <Button fx:id="btnListar" layoutX="389.0" layoutY="294.0" mnemonicParsing="false" onAction="#Listar" prefHeight="26.0" prefWidth="66.0" text="Listar" />
+            <Button fx:id="btnVoltar" layoutX="214.0" layoutY="79.0" mnemonicParsing="false" onAction="#VoltarMenu" text="Voltar" />
+            <Button fx:id="btnSair" layoutX="663.0" layoutY="79.0" mnemonicParsing="false" onAction="#Sair" text="Sair" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

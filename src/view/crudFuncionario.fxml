@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.FuncionarioController">
+   <children>
+      <AnchorPane layoutX="-239.0" layoutY="-162.0" prefHeight="838.0" prefWidth="982.0">
+         <children>
+            <Label layoutX="283.0" layoutY="227.0" text="Quantidade de registros:" />
+            <Label fx:id="lbQntRegistros" layoutX="435.0" layoutY="227.0" text="..." />
+            <Label layoutX="284.0" layoutY="301.0" text="Nome:" />
+            <Label layoutX="284.0" layoutY="338.0" text="Telefone:" />
+            <Label layoutX="284.0" layoutY="378.0" text="Salário:" />
+            <Label layoutX="284.0" layoutY="421.0" text="Endereço:" />
+            <TextField fx:id="txtNome" layoutX="359.0" layoutY="288.0" />
+            <Label fx:id="lbIdTexto" layoutX="284.0" layoutY="266.0" text="Id:" />
+            <Label fx:id="lbIdValor" layoutX="321.0" layoutY="266.0" text="..." />
+            <TextField fx:id="txtTelefone" layoutX="359.0" layoutY="325.0" />
+            <TextField fx:id="txtSalario" layoutX="359.0" layoutY="365.0" />
+            <TextField fx:id="txtEndereco" layoutX="359.0" layoutY="408.0" />
+            <ListView fx:id="lvFuncionario" layoutX="282.0" layoutY="508.0" prefHeight="262.0" prefWidth="666.0" />
+            <Label fx:id="lbDtCadTexto" layoutX="429.0" layoutY="268.0" text="Data de cadastro:" />
+            <Label fx:id="lbDtCadastroValor" layoutX="566.0" layoutY="268.0" text="..." />
+            <Button fx:id="btnCadastrar" layoutX="282.0" layoutY="458.0" mnemonicParsing="false" onAction="#Cadastrar" prefHeight="32.0" prefWidth="236.0" text="Cadastrar" />
+            <Button fx:id="btnAlterar" layoutX="825.0" layoutY="458.0" mnemonicParsing="false" onAction="#Alterar" text="Alterar" />
+            <Button fx:id="btnExcluir" layoutX="892.0" layoutY="458.0" mnemonicParsing="false" onAction="#Excluir" text="Excluir" />
+            <Button fx:id="btnVoltar" layoutX="279.0" layoutY="180.0" mnemonicParsing="false" onAction="#VoltarMenu" text="Voltar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
