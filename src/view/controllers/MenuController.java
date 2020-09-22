@@ -26,9 +26,7 @@ public class MenuController {
     void Prova(ActionEvent event) {
     	try {
 			Stage primaryStage = new Stage();
-			
-			URL url = Paths.get("C:\\Users\\Pedro\\eclipse-workspace\\1bimPOO\\src\\view\\crudFuncionario.fxml").toUri().toURL();
-			AnchorPane root = (AnchorPane)FXMLLoader.load(url);
+			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("/view/crudFuncionario.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("CRUD de Funcionario - Banco MySql");
@@ -43,10 +41,8 @@ public class MenuController {
     @FXML
     void Trabalho(ActionEvent event) {
     	try {
-			Stage primaryStage = new Stage();
-			//URL url = Paths.get("C:\\Users\\Pedro\\eclipse-workspace\\1bimPOO\\src\\view\\crudCliente.fxml").toUri().toURL();
-			URL url = Paths.get("C:\\Users\\Pedro\\eclipse-workspace\\1bimPOO\\src\\view\\crudCliente.fxml").toUri().toURL();
-			AnchorPane root = (AnchorPane)FXMLLoader.load(url);
+			Stage primaryStage = new Stage();			
+			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("/view/crudCliente.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("CRUD de Cliente - Collections");

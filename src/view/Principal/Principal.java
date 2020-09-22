@@ -21,9 +21,7 @@ public class Principal  extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		try {
-			//URL url = Paths.get("C:\\Users\\Pedro\\eclipse-workspace\\1bimPOO\\src\\view\\crudCliente.fxml").toUri().toURL();
-			URL url = Paths.get("C:\\Users\\Pedro\\eclipse-workspace\\1bimPOO\\src\\view\\Menu.fxml").toUri().toURL();
-			AnchorPane root = (AnchorPane)FXMLLoader.load(url);
+			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("/view/Menu.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Trabalho - Prova");
